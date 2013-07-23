@@ -1,0 +1,204 @@
+body {
+background-color:#CDCE00;
+font-family:Verdana;
+}
+                
+.header
+{
+height: 80px;
+width: 850px;
+margin: 0 auto;  
+
+}
+
+
+.logo{
+    margin-top: 18px;
+    height: 20px;
+    width: 200px;
+    float: left;
+}
+.titulo
+{
+    width: 800px;
+    height: 20px;
+    margin: 15px auto;
+}
+
+.titulo h1
+{
+width: 300px;
+height: 40px;
+margin: 0 auto;
+color: #fff;
+font-family: 'letra';
+font-size: 25px;
+
+}
+
+.menu{
+    margin: -13px auto; 
+    height: 64px;
+    width: 350px;
+    float: left;
+    padding-left: 130px; 
+
+}
+.menu ul
+{
+    margin: 0 auto;
+    height: 64px;
+    width: 444px;
+}
+.menu ul li
+{
+    float: left;
+    height: 64px;
+    margin: 0px 5px 0px 5px;
+    width: 64px;
+     
+}
+.menuSprites
+{
+    background-image: url('img/menu32.png');
+    margin: 32px auto;
+    height: 32px;
+    width: 32px;
+    opacity: 0.5;
+   
+}
+.menuSprites:hover
+{
+    background-image: url('img/menu64.png');
+    margin: 0 auto;
+    height: 64px;
+    width: 64px;
+    opacity: 0.9;
+}
+.menuSpritesPreguntas
+{
+    background-image: url('img/menu32.png');
+    background-position: -32.16px 0px;
+    margin: 32px auto;
+    height: 32px;
+    width: 32px;
+    opacity: 0.5;
+}
+.menuSpritesPreguntas:hover
+{
+    background-image: url('img/menu64.png');
+    background-position: -64.33px 0px;
+    height: 64px;
+    margin: 0 auto;
+    width: 64px;
+    opacity: 0.9;
+}
+.menuSpritesCatalogo
+{
+    background-image: url('img/menu32.png');
+    background-position: -64.33px 0px;
+    margin: 32px auto;
+    height: 32px;
+    width: 32px;
+    opacity: 0.5;
+}
+.menuSpritesCatalogo:hover
+{
+    background-image: url('img/menu64.png');
+    background-position: -128.66px 0px;
+    height: 64px;
+    margin: 0 auto;
+    width: 64px;
+    opacity: 0.9;
+}
+.menuSpritesContacto
+{
+    background-image: url('img/menu32.png');
+    background-position: -96.49px 0px;
+    margin: 32px auto;
+    height: 32px;
+    width: 32px;
+    opacity: 0.5;
+}
+.menuSpritesContacto:hover
+{
+    background-image: url('img/menu64.png');
+    background-position: -192.99px 0px;
+    height: 64px;
+    margin: 0 auto;
+    width: 64px;
+    opacity: 0.9;
+}
+.menuSpritesFacebook
+{
+    background-image: url('img/menu32.png');
+    background-position: -128.45px 0px;
+    margin: 32px auto;
+    height: 32px;
+    width: 32px;
+    opacity: 0.5;
+}
+.menuSpritesFacebook:hover
+{
+    background-image: url('img/menu64.png');
+    background-position: -257.32px 0px;
+    height: 64px;
+    margin: 0 auto;
+    width: 64px;
+    opacity: 0.9;
+}
+.menuSpritesPinterest
+{
+    background-image: url('img/menu32.png');
+    background-position: -160.81px 0px;
+    margin: 32px auto;
+    height: 32px;
+    width: 32px;
+    opacity: 0.5;
+}
+.menuSpritesPinterest:hover
+{
+    background-image: url('img/menu64.png');
+    background-position: -321.65px 0px;
+    height: 64px;
+    margin: 0 auto;
+    width: 64px;
+    opacity: 0.9;
+}
+
+
+
+		.flex {
+                    position:relative;
+                    width:850px;
+                    min-height:300px;
+                    margin:0 auto;
+                    border:0px solid #0083A5;
+                    margin-top:30px;
+                }
+		.flex a {
+                    display:block;
+                    width:100px;
+                    height:100px;
+                    border-radius:8px;
+                    position:absolute;
+                    background-repeat:no-repeat;
+                    background-position:center;
+                    border:3px solid #0083A5;
+                    cursor:pointer;
+                    }
+                
+                .textos{
+                    width: auto;
+                    height: 21px;
+                    text-align:center;
+                    text-shadow:1px 1px 20px #000;
+                    color:#CDCE00;
+                    font-size:18px;
+                    font-weight:bold;
+                    
+                    text-decoration:none;
+                    background-color:#0083A5;
+                }
+                    
+ 
