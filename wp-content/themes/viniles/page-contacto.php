@@ -30,11 +30,17 @@
           <div class="PreguntasForm">
               <form name="formulario" id="viniles" method="post" action="<?php bloginfo('template_directory'); ?>/enviarMail.php">
                   <label>Nombre</label>
-                  <input type="text"  name="Nombre" Placeholder="Nombre">
+                  <input type="text"  id="nombre" name="nombre" Placeholder="Nombre">
                   <label>Correo</label>
-                  <input type="mail"  name="Nombre" Placeholder="correo">
+                  <input type="mail"  id="remitente" name="remitente" Placeholder="correo">
                   <label>Mensaje</label>
-                  <textarea name="Nombre" Placeholder="Mensaje"></textarea>
+                  <textarea id="mensaje" name="mensaje" Placeholder="Mensaje">
+                    <?php
+                      if(isset($_GET['vn'])){
+                        echo 'Me gustaria que me mandara detalles del vinil nÃºmero '. $_GET['vn']; 
+                      }
+                    ?>
+                  </textarea>
                   <input type="submit">
               </form>
               
@@ -45,7 +51,7 @@
            <div class="Contacto">
                 <br>
                <br>
-               	Nuestros teléfonos:
+               	Nuestros telÃ©fonos:
                <br>
                <br>
                044 55 5456 9174
@@ -54,7 +60,7 @@
                41 68 9071
 	       <br>
                <br>
-               	Nuestra dirección:
+               	Nuestra direcciÃ³n:
                 <br>
                <br>
                Calle Marte Mz 4 Lt 4 depto 1, 

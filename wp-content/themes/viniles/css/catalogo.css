@@ -201,4 +201,400 @@ font-size: 25px;
                     background-color:#0083A5;
                 }
                     
+ /*
+ INICIA PALETA
  
+  */
+  
+  
+  .paleta{
+    
+      width: 50px;
+      height: 50px;
+      float: right;
+      margin-right: 150px;
+      margin-top: 64px;
+      z-index: 15;
+          
+  }
+  
+  .boton {
+	background-color:transparent;
+	-moz-border-radius:13px;
+	-webkit-border-radius:13px;
+	border-radius:13px;
+	border:1px solid #7e807c;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:2px 11px;
+	text-decoration:none;
+	text-shadow:1px 1px 3px #528009;
+}.boton:active {
+	position:relative;
+	top:1px;
+}
+  
+  .cajaTodoColores
+{
+	z-index: 20;
+        float: left;
+	width: 220px;
+	height: 450px;
+        
+}
+.paleta span
+{
+    display: none;
+}
+.blanco
+{
+	float: left;
+	width: 40px;
+	padding: 10px 0px 0px 0px;
+	height: 40px;
+	background: #FFF;
+	border: 1px solid #000;
+	margin: 5px 0px 0px 5px;
+}
+.dorado
+{
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin: 5px 0px 0px 5px;
+	background: #E1A403;
+        border: 1px solid #000;
+}
+.amarilloClaro
+{
+	float: left;
+	width: 40px;
+	height: 40px;
+	background: #ECDD16;
+	margin: 5px 0px 0px 5px;
+        border: 1px solid #000;
+}
+.amarilloBrims
+{
+	float: left;
+	width: 40px;
+	height: 40px;
+	background: #F2E823;
+	margin: 5px 0px 0px 5px;
+        border: 1px solid #000;
+}
+.burgundy
+ {
+ 	float: left;
+	width: 40px;
+	height: 40px;
+	padding: 10px 0px 0px 0px;
+	background: #551412;
+	margin: 5px 0px 0px 5px;
+        border: 1px solid #000;
+ }
+ .rojoFuerte
+ {
+ 	float: left;
+	width: 40px;
+	height: 40px;
+	padding: 10px 0px 0px 0px;
+	background: #892015;
+	margin: 5px 0px 0px 5px;
+        border: 1px solid #000;
+ }
+ 
+ .rojoClaro
+ {
+ 	float: left;
+	width: 40px;
+	height: 40px;
+	padding: 10px 0px 0px 0px;
+	background: #BC3824;
+	margin: 5px 0px 0px 5px;
+        border: 1px solid #000;
+ }
+ .naranja
+ {
+ 	float: left;
+	width: 40px;
+	height: 40px;
+	padding: 10px 0px 0px 0px;
+	background: #D24b18;
+	margin: 5px 0px 0px 5px;
+        border: 1px solid #000;
+ }
+ .naranjaPastel
+ {
+ 	float: left;
+	width: 40px;
+	height: 40px;
+	background: #F6871D;
+	margin: 5px 0px 0px 5px;
+        border: 1px solid #000;
+ }
+ .purpura
+ {
+ 	float: left;
+	width: 40px;
+	height: 40px;
+	padding: 10px 0px 0px 0px;
+	background: #4A247B;
+	margin: 5px 0px 0px 5px;
+        border: 1px solid #000;
+ }
+ .violeta
+ {
+ 	float: left;
+	width: 40px;
+	height: 40px;
+	background: #900A6F;
+	margin: 5px 0px 0px 5px;
+        border: 1px solid #000;
+ }
+ .magenta
+ {
+ 	float: left;
+	width: 40px;
+	height: 40px;
+	padding: 10px 0px 0px 0px;
+	background: #D5027E;
+	margin: 5px 0px 0px 5px;
+        border: 1px solid #000;
+ }
+ .rosa
+ {
+ 	float: left;
+	width: 40px;
+	height: 40px;
+	padding: 10px 0px 0px 0px;
+	background: #EE78BE;
+	margin: 5px 0px 0px 5px;
+        border: 1px solid #000;
+ }
+ .azulFuerte
+ {
+ 	float: left;
+	width: 40px;
+	height: 40px;
+	padding: 10px 0px 0px 0px;
+	background: #070E47;
+	margin: 5px 0px 0px 5px;
+        border: 1px solid #000;
+ }
+ .azulBrillante
+ {
+ 	float: left;
+	width: 40px;
+	height: 40px;
+	background: #002A9B;
+	margin: 5px 0px 0px 5px;
+        border: 1px solid #000;
+ }
+ .azulCielo
+ {
+ 	float: left;
+	width: 40px;
+	height: 40px;
+	padding: 10px 0px 0px 0px;
+	background: #1A78Bc;
+	margin: 5px 0px 0px 5px;
+        border: 1px solid #000;
+ }
+ .azulIce
+ {
+ 	float: left;
+	width: 40px;
+	height: 40px;
+	padding: 10px 0px 0px 0px;
+	background: #509CCA;
+	margin: 5px 0px 0px 5px;
+        border: 1px solid #000;
+ }
+ .turquesa
+ {
+ 	float: left;
+	width: 40px;
+	height: 40px;
+	padding: 10px 0px 0px 0px;
+	background: #0B7a70;
+	margin: 5px 0px 0px 5px;
+        border: 1px solid #000;
+ }
+ .mint
+ {
+ 	float: left;
+	width: 40px;
+	height: 40px;
+	padding: 10px 0px 0px 0px;
+	background: #92D5CC;
+	margin: 5px 0px 0px 5px;
+        border: 1px solid #000;
+ }
+ .verdeFluoresente
+ {
+ 	float: left;
+	width: 40px;
+	height: 40px;
+	background: #043920;
+	margin: 5px 0px 0px 5px;
+        border: 1px solid #000;
+ }
+ .verde
+ {
+ 	float: left;
+	width: 40px;
+	height: 40px;
+	padding: 10px 0px 0px 0px;
+	background: #005322;
+	margin: 5px 0px 0px 5px;
+        border: 1px solid #000;
+ }
+ .verdeClaro
+ {
+ 	float: left;
+	width: 40px;
+	height: 40px;
+	padding: 10px 0px 0px 0px;
+	background: #016F20;
+	margin: 5px 0px 0px 5px;
+        border: 1px solid #000;
+ }
+ .verdeLimon
+ {
+ 	float: left;
+	width: 40px;
+	height: 40px;
+	padding: 10px 0px 0px 0px;
+	background: #7DA848;
+	margin: 5px 0px 0px 5px;
+        border: 1px solid #000;
+ }
+ .chocolate
+ {
+ 	float: left;
+	width: 40px;
+	height: 40px;
+	padding: 10px 0px 0px 0px;
+	background: #342013;
+	margin: 5px 0px 0px 5px;
+        border: 1px solid #000;
+ }
+ .ginger
+ {
+ 	float: left;
+	width: 40px;
+	height: 40px;
+	padding: 10px 0px 0px 0px;
+	background: #A35011;
+	margin: 5px 0px 0px 5px;
+        border: 1px solid #000;
+ }
+ .beige
+ {
+ 	float: left;
+	width: 40px;
+	height: 40px;
+	padding: 10px 0px 0px 0px;
+	background: #C2B392;
+	margin: 5px 0px 0px 5px;
+        border: 1px solid #000;
+ }
+ .crema
+ {
+ 	float: left;
+	width: 40px;
+	height: 40px;
+	padding: 10px 0px 0px 0px;
+	background: #E1D092;
+	margin: 5px 0px 0px 5px;
+        border: 1px solid #000;
+ }
+ .oroImitacion
+ {
+ 	float: left;
+	width: 40px;
+	height: 40px;
+	background: #CD8B18;
+	margin: 5px 0px 0px 5px;
+        border: 1px solid #000;
+ }
+ .negro
+ {
+ 	float: left;
+	width: 40px;
+	height: 40px;
+	padding: 10px 0px 0px 0px;
+	background: #000000;
+	margin: 5px 0px 0px 5px;
+        border: 1px solid #000;
+ }
+ .greyFuerte
+ {
+ 	float: left;
+	width: 40px;
+	height: 40px;
+	padding: 10px 0px 0px 0px;
+	background: #393D40;
+	margin: 5px 0px 0px 5px;
+        border: 1px solid #000;
+ }
+ .grey
+ {
+ 	float: left;
+	width: 40px;
+	height: 40px;
+	padding: 10px 0px 0px 0px;
+	background: #636F6B;
+	margin: 5px 0px 0px 5px;
+        border: 1px solid #000;
+ }
+ .greyClaro
+ {
+ 	float: left;
+	width: 40px;
+	height: 40px;
+	padding: 10px 0px 0px 0px;
+	background: #AAA1AE;
+	margin: 5px 0px 0px 5px;
+        border: 1px solid #000;
+ }
+ .oroMetalico
+ {
+ 	float: left;
+	width: 40px;
+	height: 40px;
+	background: #78611E;
+	margin: 5px 0px 0px 5px;
+        border: 1px solid #000;
+ }
+ .cooperMetalico
+ {
+ 	float: left;
+	width: 40px;
+	height: 40px;
+	background: #733D23;
+	margin: 5px 0px 0px 5px;
+        border: 1px solid #000;
+ }
+ .plataMetalico
+ {
+ 	float: left;
+	width: 40px;
+	height: 40px;
+	background: #7C7E76;
+	margin: 5px 0px 0px 5px;
+        border: 1px solid #000;
+ }
+.esmerilado
+ {
+ 	float: left;
+	width: 40px;
+	height: 40px;
+	background: #CDD4D3;
+	margin: 5px 0px 0px 5px;
+        border: 1px solid #000;
+}

@@ -15,7 +15,7 @@ addEvent(window,'load',inicializarEventos,false);
  var cadena='';
  var para=document.getElementById('nombre').value; 
  var mensaje=document.getElementById('mensaje').value;
- var remitente=document.getElementById('remitente').value; cadena='para='+encodeURIComponent(para)+'&mensaje='+encodeURIComponent(mensaje) +'&remitente='+encodeURIComponent(remitente); return cadena;} var conexionServidor;function enviarFormularioServidor() { conexionServidor=crearXMLHttpRequest(); conexionServidor.onreadystatechange = procesarEventos; conexionServidor.open('POST','enviarMail.php', true); conexionServidor.setRequestHeader("Content-Type","application/x-www-form-urlencoded"); conexionServidor.send(retornarDatos()); }
+ var remitente=document.getElementById('remitente').value; cadena='para='+encodeURIComponent(para)+'&mensaje='+encodeURIComponent(mensaje) +'&remitente='+encodeURIComponent(remitente); return cadena;} var conexionServidor;function enviarFormularioServidor() { conexionServidor=crearXMLHttpRequest(); conexionServidor.onreadystatechange = procesarEventos; conexionServidor.open('POST','http://vinilosyviniles.mx/wp-content/themes/viniles/enviarMail.php', true); conexionServidor.setRequestHeader("Content-Type","application/x-www-form-urlencoded"); conexionServidor.send(retornarDatos()); }
  
  function procesarEventos(){
  var resultados = document.getElementById("resultados");

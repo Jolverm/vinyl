@@ -15,7 +15,7 @@
     
         <div class="header">            
             <div class="logo">
-                <img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="Vinilos y Viniles" title="Vinilos y Viniles" />
+                 <a href="<?php bloginfo('wpurl'); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="Vinilos y Viniles" title="Vinilos y Viniles"/></a>
             </div>
                 <?php get_template_part('menu','principal'); ?>   
        </div>
@@ -97,7 +97,9 @@
                         A nombre de Mitzi Areli Alonso Silva<br/>
                     </li>
                     <li> PayPal: <br/><br/>
-                        <a href="#">Hola</a><br/>
+                        
+                      <img src="https://www.paypal.com/es_ES/ES/i/btn/btn_xpressCheckout.gif" align="left" style="margin-right:7px;">
+                        
                         
                     </li>
                     <br/>
