@@ -22,7 +22,7 @@
        </div>
         
        <div class="titulo">
-            <h1> Contactanos </h1>
+            <h1> Contáctanos </h1>
        </div>
     
     
@@ -51,7 +51,7 @@
            <div class="Contacto">
                 <br>
                <br>
-               	Nuestros telÃ©fonos:
+               	Nuestros teléfonos:
                <br>
                <br>
                044 55 5456 9174
@@ -60,20 +60,21 @@
                41 68 9071
 	       <br>
                <br>
-               	Nuestra direcciÃ³n:
+               	Dirección de nuestro taller:
                 <br>
                <br>
                Calle Marte Mz 4 Lt 4 depto 1, 
                <br>
                Col. Media luna, Coyoacan, 
                <br>
-               Mexico, D.F., C.P. 04737
+               México, D.F., C.P. 04737
                <br/>
                <br/>
                	Nuestros correos:<br/>
-                <a href="mailto:mitzi_areli@vinilosyviniles.mx?Subject=Solcito%20informes" target="_top">mitzi_areli@vinilosyviniles.mx</a><br/>
-                <a href="mailto:ventas@vinilosyviniles.mx?Subject=Solcito%20informes" target="_top">ventas@vinilosyviniles.mx</a><br/>
                 <a href="mailto:vinilosyviniles@gmail.com ?Subject=Solcito%20informes" target="_top">vinilosyviniles@gmail.com </a><br/>
+                <a href="mailto:ventas@vinilosyviniles.mx?Subject=Solcito%20informes" target="_top">ventas@vinilosyviniles.mx</a><br/>
+                <a href="mailto:mitzi_areli@vinilosyviniles.mx?Subject=Solcito%20informes" target="_top">mitzi_areli@vinilosyviniles.mx</a><br/>
+                                
            </div>
            
        </div>

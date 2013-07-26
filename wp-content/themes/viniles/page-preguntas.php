@@ -98,7 +98,7 @@
                     </li>
                     <li> PayPal: <br/><br/>
                         
-                      <img src="https://www.paypal.com/es_ES/ES/i/btn/btn_xpressCheckout.gif" align="left" style="margin-right:7px;">
+                      <!-- PayPal Logo --><table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"></td></tr><tr><td align="center"><a href="https://www.paypal.com/mx" onclick="javascript:window.open('https://www.paypal.com/mx','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=700, height=600');"><img  src="https://www.paypal.com/es_XC/MX/Marketing/i/banner/bnr_checkout_local1_171x69.gif" border="0" alt="Comprador local"></a></td></tr></table><!-- PayPal Logo -->
                         
                         
                     </li>
@@ -113,9 +113,10 @@
                <p>¿Cómo puedo comunicarme con ustedes? </p>
                <br/>
                	Nuestros correos:<br/>
-                <a href="mailto:mitzi_areli@vinilosyviniles.mx?Subject=Solcito%20informes" target="_top">mitzi_areli@vinilosyviniles.mx</a><br/>
-                <a href="mailto:ventas@vinilosyviniles.mx?Subject=Solcito%20informes" target="_top">ventas@vinilosyviniles.mx</a><br/>
                 <a href="mailto:vinilosyviniles@gmail.com ?Subject=Solcito%20informes" target="_top">vinilosyviniles@gmail.com </a><br/>
+                <a href="mailto:ventas@vinilosyviniles.mx?Subject=Solcito%20informes" target="_top">ventas@vinilosyviniles.mx</a><br/>
+                <a href="mailto:mitzi_areli@vinilosyviniles.mx?Subject=Solcito%20informes" target="_top">mitzi_areli@vinilosyviniles.mx</a><br/>
+                
 
 
                <br>
@@ -129,14 +130,14 @@
                41 68 9071
 	       <br>
                <br>
-               	Nuestra dirección:
+               	Dirección de nuestro taller:
                 <br>
                <br>
                Calle Marte Mz 4 Lt 4 depto 1, 
                <br>
                Col. Media luna, Coyoacan, 
                <br>
-               Mexico, D.F., C.P. 04737
+               México, D.F., C.P. 04737
  
           </div>
            
