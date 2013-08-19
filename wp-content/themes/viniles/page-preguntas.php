@@ -115,7 +115,6 @@
                	Nuestros correos:<br/>
                 <a href="mailto:vinilosyviniles@gmail.com ?Subject=Solcito%20informes" target="_top">vinilosyviniles@gmail.com </a><br/>
                 <a href="mailto:ventas@vinilosyviniles.mx?Subject=Solcito%20informes" target="_top">ventas@vinilosyviniles.mx</a><br/>
-                <a href="mailto:mitzi_areli@vinilosyviniles.mx?Subject=Solcito%20informes" target="_top">mitzi_areli@vinilosyviniles.mx</a><br/>
                 
 
 

@@ -30,14 +30,15 @@
           <div class="PreguntasForm">
               <form name="formulario" id="viniles" method="post" action="<?php bloginfo('template_directory'); ?>/enviarMail.php">
                   <label>Nombre</label>
-                  <input type="text"  id="nombre" name="nombre" Placeholder="Nombre">
+                  <input type="text"  id="nombre" name="nombre" Placeholder="Nombre" required="required">
                   <label>Correo</label>
-                  <input type="mail"  id="remitente" name="remitente" Placeholder="correo">
+                  <input type="mail"  id="remitente" name="remitente" Placeholder="correo" required="required">
                   <label>Mensaje</label>
-                  <textarea id="mensaje" name="mensaje" Placeholder="Mensaje">
+                  
+                  <textarea rows="3" cols="100" id="mensaje" name="mensaje" Placeholder="Mensaje">
                     <?php
                       if(isset($_GET['vn'])){
-                        echo 'Me gustaria que me mandara detalles del vinil nÃºmero '. $_GET['vn']; 
+                          echo 'Me gustaría que me mandarán detalles del vinil número' . $_GET['vn']; 
                       }
                     ?>
                   </textarea>
@@ -73,7 +74,6 @@
                	Nuestros correos:<br/>
                 <a href="mailto:vinilosyviniles@gmail.com ?Subject=Solcito%20informes" target="_top">vinilosyviniles@gmail.com </a><br/>
                 <a href="mailto:ventas@vinilosyviniles.mx?Subject=Solcito%20informes" target="_top">ventas@vinilosyviniles.mx</a><br/>
-                <a href="mailto:mitzi_areli@vinilosyviniles.mx?Subject=Solcito%20informes" target="_top">mitzi_areli@vinilosyviniles.mx</a><br/>
                                 
            </div>
            
