@@ -101,7 +101,9 @@
 
 					?>
 
-						<?php query_posts('category_name='.$url.'&tag=vmas'); ?>
+					
+							<?php query_posts('category_name='.$url.'&tag=vmas'); ?>
+					
 	                	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 						<?php $url = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
 	                    <li> 
@@ -114,13 +116,49 @@
 	                            <div data-src="<?php echo $url; ?>" data-min-width="140"></div>
 	                            <div data-src="<?php echo $url; ?>"></div>
 	                            <noscript>
-	                                <img src=<?php bloginfo( 'template_directory' ); ?>img/cama.jpg" alt="img03"/>
+	                                <img src=<?php bloginfo( 'template_directory' ); ?>img/cama.jpg" alt="img03" />
 	                            </noscript>
 	                        </div>
 	                    </li>
 	                    <?php endwhile; else: ?>
 	                    <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
 	                    <?php endif; ?>         
+					
+					<?php
+			
+						$url="http://".$_SERVER['HTTP_HOST'].":".$_SERVER['SERVER_PORT'].$_SERVER['REQUEST_URI'];
+						
+						 $url = explode('/', $url);
+
+						 $url = $url[4];
+
+						 echo "<!--$url-->";
+
+					?>
+						<?php if(isset($_GET['offset'])){ ?>
+						<?php $of = $_GET['offset'] * 2; ?>
+						<?php query_posts('category_name='.$url.'&tag__not_in=22&posts_per_page='.$of); ?>
+	                	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+						<?php $url = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
+	                    <li> 
+	                        <div data-alt="<?php the_title(); ?>" data-description="<h3 onclick='pedir(<?php the_title(); ?>);'>Pedir este vinil | Vinil número <?php the_title(); ?></h3>" data-max-width="1200" data-max-height="800">
+	                            <div data-src="<?php echo $url; ?>" data-min-width="1300"></div>
+	                            <div data-src="<?php echo $url; ?>" data-min-width="1000"></div>
+	                            <div data-src="<?php echo $url; ?>" data-min-width="700"></div>
+	                            <div data-src="<?php echo $url; ?>" data-min-width="300"></div>
+	                            <div data-src="<?php echo $url; ?>" data-min-width="200"></div>
+	                            <div data-src="<?php echo $url; ?>" data-min-width="140"></div>
+	                            <div data-src="<?php echo $url; ?>"></div>
+	                            <noscript>
+	                                <img src=<?php bloginfo( 'template_directory' ); ?>img/cama.jpg" alt="img03" />
+	                            </noscript>
+	                        </div>
+	                    </li>
+	                    <?php endwhile; else: ?>
+	                    <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+	                    <?php endif; ?>
+	                    <?php } ?>
+	                             
 					</ul>
 
 					<div class="gamma-overlay"></div>
@@ -131,6 +169,7 @@
 
 			</div><!--/main-->
 		</div>
+		<div id="ancla"></div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 		<script src="<?php bloginfo( 'template_directory' ); ?>/js/jquery.masonry.min.js"></script>
 		<script src="<?php bloginfo( 'template_directory' ); ?>/js/jquery.history.js"></script>
@@ -179,16 +218,30 @@
 
 				// Example how to add more items (just a dummy):
 
-				var page = 0,
-					items = ['<li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/large/3.jpg" data-min-width="300"></div><div data-src="images/medium/3.jpg" data-min-width="200"></div><div data-src="images/small/3.jpg" data-min-width="140"></div><div data-src="images/xsmall/3.jpg"></div><noscript><img src="images/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/large/3.jpg" data-min-width="300"></div><div data-src="images/medium/3.jpg" data-min-width="200"></div><div data-src="images/small/3.jpg" data-min-width="140"></div><div data-src="images/xsmall/3.jpg"></div><noscript><img src="images/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/large/3.jpg" data-min-width="300"></div><div data-src="images/medium/3.jpg" data-min-width="200"></div><div data-src="images/small/3.jpg" data-min-width="140"></div><div data-src="images/xsmall/3.jpg"></div><noscript><img src="images/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/large/3.jpg" data-min-width="300"></div><div data-src="images/medium/3.jpg" data-min-width="200"></div><div data-src="images/small/3.jpg" data-min-width="140"></div><div data-src="images/xsmall/3.jpg"></div><noscript><img src="images/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/large/3.jpg" data-min-width="300"></div><div data-src="images/medium/3.jpg" data-min-width="200"></div><div data-src="images/small/3.jpg" data-min-width="140"></div><div data-src="images/xsmall/3.jpg"></div><noscript><img src="images/xsmall/3.jpg" alt="img03"/></noscript></div></li>']
-
+				var page = 0;
 				function fncallback() {
 
 					$( '#loadmore' ).show().on( 'click', function() {
 
+					var url_cat = document.URL;
+
+					url_cat = url_cat.split('?');
+
+					url_cat = url_cat[0];
+
+					<?php
+						if(!isset($_GET['offset'])){
+							$offset = 25;
+						} else {
+							$offset = $_GET['offset'] + 25;
+						}
+					?>
+
+					location.href=url_cat + '?offset=<?php echo $offset; ?>#ancla';
+
 						var json_to_send = {action : 'trae_mas', cat : categoria_actual, offset : offset};
 				        var uri = wp_url+'/wp-admin/admin-ajax.php';
-				        
+				        /*
 				        $.ajax({
 				            url : uri,
 				            type : 'POST',
@@ -196,7 +249,7 @@
 				            success : function(data){
 				                var page = 0, items = [data];
 				                ++page;
-				                var newitems = items[page-1];
+				                var newitems = items[page];
 				                if( page <= 1 ) {
 				                    
 				                    Gamma.add( $( newitems ) );
@@ -212,7 +265,7 @@
 				            error: function(){
 				                alert('Lo sentimos, no pudimos encontrar más viniles.');
 				            }
-				        });
+				        });*/
 						offset++;
 
 					} );

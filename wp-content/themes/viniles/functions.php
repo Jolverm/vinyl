@@ -22,9 +22,9 @@
    function trae_mas(){
          
         $cat = $_POST['cat'];
-        $offset = $_POST['offset'];
+        $offset = $_POST['offset'] * 25;
 
-        query_posts('cat='.$cat.'&tag__not_in=22&offset='.$offset);
+        query_posts('cat='.$cat.'&tag__not_in=22&post_per_page='.$offset);
 
         if ( have_posts() ) : while ( have_posts() ) : the_post();
 
