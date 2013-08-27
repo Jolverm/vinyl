@@ -30,15 +30,14 @@
           <div class="PreguntasForm">
               <form name="formulario" id="viniles" method="post" action="<?php bloginfo('template_directory'); ?>/enviarMail.php">
                   <label>Nombre</label>
-                  <input type="text"  id="nombre" name="nombre" Placeholder="Nombre" required="required">
+                  <input type="text"  id="nombre" name="nombre" Placeholder="Nombre" required="required" autofocus>
                   <label>Correo</label>
                   <input type="mail"  id="remitente" name="remitente" Placeholder="correo" required="required">
                   <label>Mensaje</label>
-                  
                   <textarea rows="3" cols="100" id="mensaje" name="mensaje" Placeholder="Mensaje">
                     <?php
                       if(isset($_GET['vn'])){
-                          echo 'Me gustaría que me mandarán detalles del vinil número' . $_GET['vn']; 
+                          echo 'Me gustaría que me mandarán detalles del vinil número ' . $_GET['vn']; 
                       }
                     ?>
                   </textarea>
