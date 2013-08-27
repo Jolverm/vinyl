@@ -1,5 +1,3 @@
-<?php get_header(); ?>
-
 <!DOCTYPE html>
 <html>
 
@@ -148,4 +146,4 @@
        
 </footer>
 
-<?php get_footer();?>
+</html>
