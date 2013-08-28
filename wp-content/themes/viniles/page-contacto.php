@@ -37,7 +37,7 @@
                   <textarea rows="3" cols="100" id="mensaje" name="mensaje" Placeholder="Mensaje">
                     <?php
                       if(isset($_GET['vn'])){
-                          echo 'Me gustaría que me mandarán detalles del vinil número ' . $_GET['vn']; 
+                          echo 'Me gustaría que me mandaran detalles del vinil número ' . $_GET['vn']; 
                       }
                     ?>
                   </textarea>

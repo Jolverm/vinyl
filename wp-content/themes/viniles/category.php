@@ -19,7 +19,7 @@
     	</style>
         <script src="<?php bloginfo( 'template_directory' ); ?>/js/modernizr.custom.70736.js"></script>
         <script src="<?php bloginfo( 'template_directory' ); ?>/js/modernizr.custom.js"></script>
-     </head>
+        </head>
     <div class="header">
     	<?php get_template_part('logo'); ?>  
         <?php get_template_part('menu','principal'); ?>   
@@ -28,59 +28,60 @@
     <body>
         
             <div class="container">
-            <ul class="grid effect-2" id="grid">
-            	<?php $category = get_the_category(); ?>
-				<?php $category = $category[0]->slug; ?>
-				<?php //Comienza vmas ?>
-        		<?php query_posts('posts_per_page=25&tag=vmas&category_name='.$category); ?>
-	            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-	            <?php if ( has_post_thumbnail() ): ?>
-	            <?php $imagen = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' ); ?>
-	            <?php $miniatura = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'thumbnail' ); ?>
-	            <?php $src1 = $imagen['0']; ?>
-	            <?php $src2 = $miniatura['0']; ?>
-	            <li>
-	            	<a href="<?php echo $src1 ?>" data-lightbox="categoria" title="<?php the_title(); ?>">
-            			<img src="<?php echo $src1 ?>" alt="<?php the_title();?>"/>
-	            	</a>
-	            	<div class="hola">
-	            		<a href="<?php bloginfo('wpurl'); ?>/contacto?vn=<?php the_title(); ?>" target="_blank">
-	            			<?php the_title(); ?> | Pedir esté vinil
-	            		</a>
-	            	</div>
-	            </li>
-	            <?php endif; ?>
-				<?php endwhile; else: ?>
-	            <p><?php _e('Lo sentimos la categoria esta vacia.'); ?></p>
-	            <?php endif; ?>
-	            <?php //Terminan vmas ?>
-
-	            <?php //Comienza no-vmas ?>
-        		<?php query_posts( array ( 'category_name' => $category, 'posts_per_page' => -1, 'tag__not_in' => 22) ); ?>
-	            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-	            	<?php if ( has_post_thumbnail() ): ?>
+            
+		            <ul class="grid effect-2" id="grid">
+		            	<?php $category = get_the_category(); ?>
+						<?php $category = $category[0]->slug; ?>
+						<?php //Comienza vmas ?>
+		        		<?php query_posts('posts_per_page=25&tag=vmas&category_name='.$category); ?>
+			            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+			            <?php if ( has_post_thumbnail() ): ?>
 			            <?php $imagen = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' ); ?>
 			            <?php $miniatura = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'thumbnail' ); ?>
 			            <?php $src1 = $imagen['0']; ?>
 			            <?php $src2 = $miniatura['0']; ?>
-			                
 			            <li>
 			            	<a href="<?php echo $src1 ?>" data-lightbox="categoria" title="<?php the_title(); ?>">
-			            		<img src="<?php echo $src1 ?>" alt="<?php the_title();?>"/>
+		            			<img src="<?php echo $src1 ?>" alt="<?php the_title();?>"/>
 			            	</a>
 			            	<div class="hola">
 			            		<a href="<?php bloginfo('wpurl'); ?>/contacto?vn=<?php the_title(); ?>" target="_blank">
-			            			<?php the_title(); ?> | Pedir esté vinil
+			            			<?php the_title(); ?> | Pedir éste vinil
 			            		</a>
 			            	</div>
 			            </li>
-			        <?php endif; ?>
-					<?php endwhile; else: ?>
-		            <p><?php _e('Lo sentimos la categoria esta vacia.'); ?></p>
-	            <?php endif; ?>
-	            <?php //Terminan no-vmas ?>
-            </ul>
-            </div>
+			            <?php endif; ?>
+						<?php endwhile; else: ?>
+			            <p><?php _e('Lo sentimos la categoria esta vacia.'); ?></p>
+			            <?php endif; ?>
+			            <?php //Terminan vmas ?>
+
+			            <?php //Comienza no-vmas ?>
+		        		<?php query_posts( array ( 'category_name' => $category, 'posts_per_page' => -1, 'tag__not_in' => 22) ); ?>
+			            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+			            	<?php if ( has_post_thumbnail() ): ?>
+					            <?php $imagen = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' ); ?>
+					            <?php $miniatura = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'thumbnail' ); ?>
+					            <?php $src1 = $imagen['0']; ?>
+					            <?php $src2 = $miniatura['0']; ?>
+					                
+					            <li>
+					            	<a href="<?php echo $src1 ?>" data-lightbox="categoria" title="<?php the_title(); ?>">
+					            		<img src="<?php echo $src1 ?>" alt="<?php the_title();?>"/>
+					            	</a>
+					            	<div class="hola">
+					            		<a href="<?php bloginfo('wpurl'); ?>/contacto?vn=<?php the_title(); ?>" target="_blank">
+					            			<?php the_title(); ?> | Pedir éste vinil
+					            		</a>
+					            	</div>
+					            </li>
+					        <?php endif; ?>
+							<?php endwhile; else: ?>
+				            <p><?php _e('Lo sentimos la categoria esta vacia.'); ?></p>
+			            <?php endif; ?>
+			            <?php //Terminan no-vmas ?>
+		            </ul>
+            </div> <!--Terminan container-->
             
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
@@ -89,7 +90,10 @@
 		<script src="<?php bloginfo( 'template_directory' ); ?>/js/classie.js"></script>
 		<script src="<?php bloginfo( 'template_directory' ); ?>/js/AnimOnScroll.js"></script>
         <script src="<?php bloginfo( 'template_directory' ); ?>/js/lightbox-2.6.min.js"></script>
+        <script src="<?php bloginfo( 'template_directory' ); ?>/js/jquery.scrollTop.js"></script>
 
+        
+CDCE00
 		
 		<script>
 			new AnimOnScroll( document.getElementById( 'grid' ), {
@@ -103,5 +107,19 @@
         $("span").slideToggle("slow");
         });
     	</script>
+    	<script type="text/javascript">
+
+			$(function(){
+					   scrollTop({
+								 color:"#CDCE00", // valores en rga, rgba, hexadecimal (#666), o palabras clave "grey"
+								 top:50, // tope de altura donde quieres que se muestre el botón de subir arriba
+								 time:500,  // intervalo en milisegundos que determina la duración de la opacidad del botón subir arriba
+								 position:"bottom", // posición del botón , admite estos posibles valores: "top" "middle" "bottom",
+								 speed: 300 // tiempo en milisegundos en hacer el scroll hacia arriba (top:0)
+								 
+								});
+		     			 });
+
+		</script>
 	</body>
 </html>
