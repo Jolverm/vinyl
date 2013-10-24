@@ -30,8 +30,8 @@
             <div class="container">
             
 		            <ul class="grid effect-2" id="grid">
-		            	<?php $category = get_the_category(); ?>
-						<?php $category = $category[0]->slug; ?>
+
+		            	<?php $category = get_query_var('category_name'); ?>
 						<?php //Comienza vmas ?>
 		        		<?php query_posts('posts_per_page=25&tag=vmas&category_name='.$category); ?>
 			            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -71,7 +71,7 @@
 					            	</a>
 					            	<div class="hola">
 					            		<a href="<?php bloginfo('wpurl'); ?>/contacto?vn=<?php the_title(); ?>" target="_blank">
-					            			<?php the_title(); ?> | Pedir éste vinil
+					            			<?php the_title(); ?> | Informes de éste vinil
 					            		</a>
 					            	</div>
 					            </li>
