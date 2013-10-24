@@ -46,7 +46,7 @@
 			            	</a>
 			            	<div class="hola">
 			            		<a href="<?php bloginfo('wpurl'); ?>/contacto?vn=<?php the_title(); ?>" target="_blank">
-			            			<?php the_title(); ?> | Pedir éste vinil
+			            			<?php the_title(); ?> | Informes de éste vinil
 			            		</a>
 			            	</div>
 			            </li>
